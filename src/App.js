@@ -1,5 +1,5 @@
-import { data } from './helper/data';
-import Card from "./components/Card"
+import data from "./helper/data";
+import Card from "./components/Card";
 
 function App() {
   return (

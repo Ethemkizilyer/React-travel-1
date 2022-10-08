@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 
 const Card =({item}) => {
@@ -13,4 +13,4 @@ const Card =({item}) => {
         </div>
     )
 }
-export default Card;
+export default Card
