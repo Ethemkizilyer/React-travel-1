@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Patrick Hand SC', cursive;
+  font-weight: 300;
+  text-decoration: none;
+}
+body{
+width: 100%;
+height: 100vh;
+background-color: rgb(170, 219, 219);
+overflow-x: hidden;
+}
+.App{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+}
+.header{
+  width: 100vw;
+  height: 4rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+
+}
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+  font-size: 1rem ;
+  
+}
+ul li{
+ width: 5rem;
+ height: 4rem;
+ text-align: center;
+
+}
+li:hover{
+  background-color:rgb(170, 219, 219);
+  
+}
+
+a{
+  color: white;
+  font-size: 1.2rem;
+  line-height: 4rem;
+ 
+}
+li:hover a{
+  color: black;
+}
+
+.orta{
+  margin: 2rem;
+}
+
+.kapsa{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem 2rem;
+  padding-bottom: 2rem;
+
+}
+
+.card{
+ /* border: 1px solid red; */
+ width: 350px;
+ height: 350px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ padding: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 6px;
+}
+.title{
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 3rem;
+  text-align: left;
+  padding-left: 0.5rem;
+  color: white;
+}
+.image{
+  width: 100%;
+  height: 280px;
+  /* border: 1px solid red; */
+  /* border-radius: 5px; */
+ 
+  
+}
+img{
+  width: 100%;
+  height: 280px;
+  border-radius: 5px;
+  
+  
+}
+.desc{
+  /* display: none; */
+  position: absolute;
+  transition: 1s all;
+  bottom:-9.5rem ;
+  color: white;
+  padding: 0.5rem;
+  
+  /* height: 0px; */
+  background-color: rgba(36, 30, 30, 0.651);
+  text-align: justify;
+
+}
+p{
+    font-family:serif;
+font-size: 0.9rem;
+line-height: 1rem;
+}
+.image:hover ~ .desc{
+bottom: 0;
+}
+.image:hover{
+  filter:saturate(0.4);
+}
